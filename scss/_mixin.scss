@@ -1,0 +1,14 @@
+$color_dark: #3d1101;
+$color_light: #efe9e7;
+$orange: #ff5001;
+$color_fb: #3A5795;
+$color_tw: #41ABE1;
+$font_l: 20px;
+$font_ch: Microsoft JhengHei;
+$font_en: Arial, Helvetica, sans-serif;
+@mixin hide_box{
+    max-height: 0;
+    overflow: hidden;        
+}
+
+// $font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Microsoft JhengHei", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;

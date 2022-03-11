@@ -1,0 +1,254 @@
+.feature{
+	color: $color_dark;
+	background: $color_light;
+    .container{
+        padding: 50px 0;
+        @include mobile(){
+            padding: 40px 0 20px 0;
+        }
+    }
+}
+.feature_title{
+	text-align: center;
+	font-size: $font_l;
+	line-height: 1.6;
+	margin-bottom: 30px;
+	position: relative;
+    &::before, &::after{
+        background: $color_dark;
+        content: "";
+        width: 11.5%;
+        height: 0.5px;
+        position: absolute;
+        @include mobile(){
+            display: none;
+        }        
+    }
+    &::before{
+        top: 50%;
+	    left: 23%;
+    }
+    &::after{
+        top: 50%;
+	    right: 23%;
+    }
+}
+.feature_list{
+	display: flex;
+	justify-content: space-evenly;
+    @include pad(){
+        justify-content: space-around;    
+    }
+    @include mobile(){
+        display: block;   
+    }
+    li{
+        width: 25.5555%;
+        @include mobile(){
+            margin: 0 auto 40px auto;
+		    width: 75%;     
+        }
+    }
+    img{
+        margin: 0 auto;
+        border-radius: 100%;
+        margin-bottom: 20px;
+    }
+    h4{
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+.chef{
+	background: $color_dark;
+	color: $color_light;
+    .container{
+        height: 460px;
+        display: flex;
+        padding: 0 3%;
+        @include mobile(){
+            padding: 0;
+            display: block;
+            height: auto;
+        }
+    }
+}
+.chef_pic{
+	max-width: 50%;
+	margin-right: 25px;
+	object-fit: cover;
+	object-position: 100%;
+    @include mobile(){
+        max-width: 100%;
+		height: 460px;
+		object-fit: cover;
+		object-position: 50%;
+		margin: 0 auto;
+    }
+}
+.chef_intro{
+	width: 43.5555%; 
+	padding: 7.5% 0;
+    @include mobile(){
+        width: 75%;
+		margin: 0 auto;
+    }
+}
+.chef_name{
+	font-size: $font_l;
+	margin-bottom: 3px;
+}
+.chef_name_en{
+	margin-bottom: 16px;
+}
+.review{
+	background-color: $color_light;
+	color: $color_dark;
+    .container{
+        padding: 50px 3%;
+        @include mobile(){
+            padding: 50px 0 30px;
+        }
+    }
+}
+.review_title{
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.review_list{
+	display: flex;
+	justify-content: space-between;
+    @include mobile(){
+        display: block;
+    }
+}
+.customer{
+	display: flex;
+	align-items: flex-start;
+	width: 31.8%;
+    @include mobile(){
+        width: 82%;
+		margin: 0 auto 30px;
+    }
+    img{
+        border-radius: 100%;
+	    width: 100px;
+	    margin-right: 13px;
+    }
+}
+.customer_review{
+    h4{
+        font-size: 18px;
+        margin-top: 22px;
+        margin-bottom: 22px;
+    }
+    p{
+        margin-bottom: 16px;
+    }
+    span{
+        display: block;
+        text-align: right;
+    }
+}
+.booking{
+	background-color: #fafafa;
+	color: $color_dark;
+    .container{
+        padding: 50px 3%;
+    }
+}
+.booking_title{
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 38px;
+}
+.booking_content{
+	display: flex;
+    @include mobile(){
+        display: block;
+		height: auto;
+    }
+}
+.map{
+	max-width: 50%;
+    height: 388px;
+	margin-right: 20px;
+	object-fit: cover;
+	object-position: 25%;
+    @include mobile(){
+        max-width: 100%;
+		height: 388px;
+		object-fit: cover;
+		object-position: 25%;
+		margin: 0 auto 30px;
+    }
+}
+.booking_form{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    @include mobile(){
+        width: 82%;
+		height: 388px;/*因為form是用flex寫，原本左右flex會跟圖片自適應高，現在變單欄後自己的flex間距會不見*/
+		margin: 0 auto;
+    }
+}
+.booking_info{
+    label, input{
+        display: block;
+        width: 100%;
+    }
+    label{
+        font-size: 14px;
+	    margin-bottom: 6px;
+    }
+    input{
+        border: #cccccc solid 1px;
+        border-radius: 3px;
+        box-shadow: 0px 1px 0px 0px #ececec;
+        font-size: 16px;
+        padding: 5.5px;
+        &:focus{
+            outline: none;
+            border: $color_dark solid 1px;
+        }
+    }
+} 
+.checkbox{
+	margin-bottom: 25px;
+    p{
+        margin-bottom: 6px;
+    }
+    label{
+        margin-right: 6px;
+    }
+    input{
+        margin: 0 36px 0 0;
+    }
+}
+.submit_btn{
+	align-self: flex-end;
+    input{
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 14px;
+        padding: 6px 21px;
+        border-radius: 3px;
+        border: transparent solid 1px;
+        &:focus{
+            font-weight: bold;
+            outline: none;
+            border: $color_dark solid 1px;
+        }
+        &[type=reset]{
+            background-color: rgba(0, 0, 0, 0.35);
+            margin-right: 11px;
+        }
+        &[type=submit]{
+            background-color: #f56c23;
+        }
+    }	
+}

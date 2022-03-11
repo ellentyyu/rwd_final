@@ -1,0 +1,252 @@
+.shop{
+	background-color: $color_light;
+	color: $color_dark;
+    .container{
+        padding: 50px 3% 0;
+        display: flex;
+        justify-content: space-between;
+        @include iphone5(){
+            display: block;
+        }
+    }    
+}
+.shop_menu{
+	width: 23%;
+    span{
+        font-size: 26px;
+        margin-right: 6px;
+    }
+    h3{
+        font-size: $font_l;
+        margin-bottom: 16px;
+    }
+    @include pad(){
+        width: 26%;
+    }
+    @include iphone5(){
+        width: 67%;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 30px
+    }
+}
+.shop_menu_list{
+    li{
+        border-bottom: 1px solid $color_dark;
+        a{
+            color: $color_dark;
+            padding: 8px;
+            transition: 0.5s ease;
+            &:hover{
+                background-color: $color_dark;
+	            color: $color_light;
+            }
+        }    
+    }
+} 
+.products{
+	width: 74%;
+    @include pad(){
+        width: 70%;
+    }
+    @include iphone5(){
+        width: 100%;
+    }
+}
+.products_head{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 25px;
+    @include iphone5(){
+        display: block;
+		width: 67%;
+		margin: 0 auto;
+    }
+}
+.search{
+	width: 66%;
+	display: flex;
+    @include iphone5(){
+        width: 100%;
+		margin-bottom: 16px;
+    }
+    input{
+        width: 95%;
+        height: 32px;
+        margin-right: -2px;
+        background: transparent;
+        border: $color_dark solid 2px;
+        font-size: 16px;
+        &:focus{
+            outline: none;
+        }
+    }
+    button{
+        background: $color_dark;
+        color: $color_light;
+        border: none;
+        font-size: $font_l;
+        transition: 0.8s;
+        &:hover{
+            transform: rotate(90deg);
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+}
+.cart{
+	display: flex;
+	align-items: center;
+	position: relative;
+    @include iphone5(){
+        justify-content: flex-end;
+    }
+    a{
+        color: $color_dark;
+        padding: 0px 12px;
+        transition: 0.5s ease;
+        &:hover{
+            color: $orange;
+        }
+    }
+}
+.check_out{
+	position: relative;
+    &::after{
+    content:"";
+	width: 1.5px;
+	height: 15px;
+	position: absolute;
+	background: $color_dark;
+	top: 20%;
+	right: 0;
+    }
+    @include iphone5(){
+        padding: 0 12px;
+    }
+}
+.check_cart{
+	font-size: 27px;
+    @include iphone5(){
+        padding: 0 0 0 12px;
+    }
+}
+.products_list{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+    @include iphone5(){
+        display: block;
+    }
+}
+.products_items{
+	width: 31.5555%;
+	text-align: center;
+	box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+	margin-bottom: 30px;
+	position: relative;
+    @include pad(){
+        width: 47%;
+    }
+    @include iphone5(){
+        width: 300px;
+		margin: 30px auto 0 auto;
+    }
+    img{
+        margin-bottom: 12px;
+    }
+    .name{
+        font-size: $font_l;
+    }
+    .name_en{
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    hr{
+        width: 40%;
+        height: 1.2px;
+        border: none;
+        background: $color_dark;
+        margin-bottom: 4px;
+    }
+    .fa-heart{
+        cursor: pointer;
+        color: white;
+        position: absolute;
+        font-size: 18px;
+        top: 7px;
+        left: 7px;
+        &:hover{
+            font-weight: bold;
+        }	
+    }
+}
+.price{
+	font-family: $font_en;
+	font-size: $font_l;
+	font-weight: bold;
+	font-style: italic;
+	margin: 16px 0;
+}
+.add_btn{
+	width: 90%;
+	border: $orange solid 2px;
+	background-color: transparent;
+	color: $orange;
+	margin-bottom: 12px;
+	padding: 4px;
+	transition: 0.5s ease;
+    &:hover{
+        border: $orange solid 2px;
+        background-color: $orange;
+        color: $color_light;
+    }
+    &:focus{
+        outline:none;	
+        border: $orange solid 2px;
+        background-color: $orange;
+        color: $color_light;
+    }
+    i{
+        font-size: 14px;
+        margin-right: 10px;
+    }
+}
+.ribbon_box{
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	top: -5px;
+	right: -5px;
+	overflow: hidden;
+}
+.ribbon{
+	position: absolute;
+	width: 110px;
+	background: #0c9;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px;
+	transform: rotate(45deg);
+	top: 16px;
+	right: -30px;
+    &::before, &::after{
+        content: "";
+        position: absolute;
+        border-style: solid;
+        border-color: #078f6d transparent transparent transparent
+    }
+    &::before{
+        border-width: 8px 8px 0 0;
+        top: 24px;
+        left: 3px;
+    }
+    &::after{
+        border-width: 8px 0 0 8px;
+        top: 24px;
+        right: 7.5px;
+    }
+}
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD</title>
+
+    <link rel="shortcut icon" href="/images/burger_icon.png">
+    <meta name='description' content="RWD 最終作業" />
+    <meta name="keywords" content="響應式, 六角漢堡, 西餐廳">
+    <meta property="og:title" content="RWD 最終作業" />
+    <meta property="og:description" content="RWD 最終作業">
+    <meta property="og:type" content="website" /> 
+    <meta property="og:url" content="FB上的網址" />
+    <meta property="og:image" content="FB的圖片" />
+
+    <link rel="apple-touch-icon" href="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'/>
+    <link rel="stylesheet" href="scss/all.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/all.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1><a href="index.html">六角西餐廳</a></h1>
+            <ul class="menu">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="store.html">訂購</a></li>
+                <li><a href="login.html">登入</a></li>
+            </ul>
+            <a href="#" class="fas fa-bars menu_btn"></a>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="container">
+            <div class="slogan">
+                <h2 class="slogan_pc">咬一口就無法忘懷的漢堡</h2>
+                <h2 class="slogan_mb">咬一口<br>就無法忘懷的漢堡</h2>
+                <p>七夕絕對無法錯過的好滋味<br>
+                <span class="fas fa-utensils"></span>六角大漢堡<span class="fas fa-utensils"></span></p>
+            </div>
+        </div>
+    </div>
+    <div class="shop">
+        <div class="container">
+            <div class="shop_menu">                
+                <h3><span class="fas fa-leaf"></span>
+                    線上訂購美食
+                </h3>
+                <ul class="shop_menu_list">
+                    <li><a href="#">全部 (23)</a></li>
+                    <li><a href="#">只愛吃薯條 (18)</a></li>
+                    <li><a href="#">加熱就可食 (1)</a></li>
+                    <li><a href="#">不敗漢堡系列 (4)</a></li>
+                </ul>
+            </div>
+            <div class="products">
+                <div class="products_head"> 
+                    <div class="search">
+                        <input type="search">
+                        <button type="submit"><i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="cart">
+                        <a href="#" class="check_out">結帳去</a>
+                        <a href="#" class="fas fa-shopping-cart check_cart"></a>
+                    </div>
+                </div>
+                <ul class="products_list">
+                    <li class="products_items">
+                        <img src="./images/product_1.png" alt="burger">
+                        <h3 class="name">經典漢堡套餐</h3>
+                        <h3 class="name_en">Classic Hamburger Package</h3>
+                        <hr>
+                        <p class="price">$120</p>
+                        <button class="add_btn" type="button"><i class="fas fa-shopping-cart"></i>加入購物車</button>
+                        <span class="far fa-heart"></span>
+                        <div class="ribbon_box">
+                            <div class="ribbon">熱銷美食</div>
+                        </div>                       
+                    </li>
+                    <li class="products_items">
+                        <img src="./images/product_2.png" alt="burger">
+                        <h3 class="name">英俊香腸</h3>
+                        <h3 class="name_en">Handsome Sausage</h3>
+                        <hr>
+                        <p class="price">$1,024</p>
+                        <button class="add_btn" type="button"><i class="fas fa-shopping-cart"></i>加入購物車</button>
+                        <span class="far fa-heart"></span>
+                    </li>
+                    <li class="products_items">
+                        <img src="./images/product_3.png" alt="burger">
+                        <h3 class="name">漢堡兄弟</h3>
+                        <h3 class="name_en">Burger Brothers</h3>
+                        <hr>
+                        <p class="price">$792</p>
+                        <button class="add_btn" type="button"><i class="fas fa-shopping-cart"></i>加入購物車</button>
+                        <span class="far fa-heart"></span>
+                    </li>
+                    <li class="products_items">
+                        <img src="./images/product_4.png" alt="burger">
+                        <h3 class="name">完美願望</h3>
+                        <h3 class="name_en">Dragon Ball Package</h3>
+                        <hr>
+                        <p class="price">$999,999</p>
+                        <button class="add_btn" type="button"><i class="fas fa-shopping-cart"></i>加入購物車</button>
+                        <span class="far fa-heart"></span>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="info">
+                <div class="about">
+                    <h3>關於 六角西餐廳</h3>
+                    <p>Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. </p>
+                </div>
+                <div class="contact">
+                    <h3>聯絡方式</h3>
+                    <ul>
+                        <li><a href="tel:+886-886-886">+886 886 886</a></li>
+                        <li><a href="mailto:hexschool@gmail.com">service@hexschool.com</a></li>
+                        <li>高雄市中正五路到底</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_logo">
+                <img src="./images/logo_l@svg.svg" alt="logo">
+                <a class="fab fa-google-plus-square g_logo" href="#"></a>
+                <a class="fab fa-twitter-square tw_logo"  href="#"></a>
+                <a class="fab fa-facebook-square fb_logo" href="#"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

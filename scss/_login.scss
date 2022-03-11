@@ -1,0 +1,90 @@
+.login{
+	background: $color_light;
+	color: $color_dark;
+    .container{
+        padding: 50px 0 10px 0;
+    }
+}
+.login_maintitle, .login_subtitle{
+	text-align: center;
+	font-weight: bolder;
+}
+.login_maintitle{
+	font-size: 48px;
+}
+.login_subtitle{
+	font-size: $font_l;
+	margin-bottom: 35px;
+}
+.login_form{
+	max-width: 300px;
+	margin: 0 auto;
+	padding: 15px;
+	border-top: $orange solid 3px;
+	box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+    h3{
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: $font_l;
+        font-weight: bold;
+        font-family: $font_en;
+    }
+}
+.login_info{
+	margin-bottom: 15px;
+    label, input{
+        width: 100%;
+	    display: block;
+    }
+    label{
+        margin-bottom: 3px;
+    }
+    input{
+        background: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        box-shadow: 0px 1px 0px 0px #ECECEC;
+        border-radius: 3px;
+        font-size: 15px;
+        padding: 6.5px;
+        color: $color_dark;
+        &::placeholder{
+            color:rgba(61, 17, 0, 0.50);
+        }
+        &:focus{
+            outline: none;
+	        border: $color_dark solid 1px;
+        }
+    }
+}
+.forget_pw{
+	margin: 3px 0 30px;
+	color: $orange;
+	font-size: 13px;
+    &:hover{
+        font-weight: bold;
+    }
+}
+.login_submit{
+	display: flex;
+	justify-content: space-between;
+    input, a{
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 14px;
+        padding: 6px 48px;
+        border-radius: 3px;
+        border: transparent solid 1px;
+        &:focus{/*這樣可以成功代到上面兩個*/
+            font-weight: bold;
+            outline: none;
+            border: $color_dark solid 1px;
+        }
+    }
+    a{
+        background-color: rgba(0, 0, 0, 0.35);
+    }
+    input{
+        background-color: #f56c23;
+    }
+}
+
